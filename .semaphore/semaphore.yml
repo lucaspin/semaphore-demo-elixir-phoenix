@@ -14,3 +14,5 @@ blocks:
             - echo $SEMAPHORE_ORGANIZATION_URL
             - echo $SEMAPHORE_PROJECT_ID
             - echo $SEMAPHORE_ARTIFACT_TOKEN
+            - echo $SEMAPHORE_WORKFLOW_ID
+            - echo $SEMAPHORE_JOB_ID
