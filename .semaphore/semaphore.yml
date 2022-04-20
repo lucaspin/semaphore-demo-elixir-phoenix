@@ -11,3 +11,6 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
+            - echo $SEMAPHORE_ORGANIZATION_URL
+            - echo $SEMAPHORE_PROJECT_ID
+            - echo $SEMAPHORE_ARTIFACT_TOKEN
