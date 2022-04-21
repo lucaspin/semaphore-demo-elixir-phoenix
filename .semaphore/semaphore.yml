@@ -11,10 +11,3 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
-            - test-results publish junit-example.xml
-after_pipeline:
-  task:
-    jobs:
-      - name: Publish Results
-        commands:
-          - test-results gen-pipeline-report
