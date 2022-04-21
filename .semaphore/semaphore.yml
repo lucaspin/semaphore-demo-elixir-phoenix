@@ -14,6 +14,7 @@ blocks:
             - mkdir testing
             - echo "something" > testing/a.txt
             - echo "something else" > testing/b.txt
+            - artifact version
             - artifact push project testing/ -v
             - artifact push workflow testing/ -v
             - artifact push job testing/ -v
