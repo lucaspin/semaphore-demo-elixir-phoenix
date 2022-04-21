@@ -11,12 +11,6 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
-            - mkdir testing
-            - echo "something" > testing/a.txt
-            - echo "something else" > testing/b.txt
-            - artifact push project testing/ -v
-            - artifact push workflow testing/ -v
-            - artifact push job testing/ -v
             - test-results publish junit-example.xml
 after_pipeline:
   task:
