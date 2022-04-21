@@ -11,8 +11,21 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
-            - echo $SEMAPHORE_ORGANIZATION_URL
-            - echo $SEMAPHORE_PROJECT_ID
-            - echo $SEMAPHORE_ARTIFACT_TOKEN
-            - echo $SEMAPHORE_WORKFLOW_ID
-            - echo $SEMAPHORE_JOB_ID
+            - mkdir testing
+            - echo "something" > testing/a.txt
+            - echo "something else" > testing/b.txt
+            - artifact push project testing/ -v
+            - artifact push workflow testing/ -v
+            - artifact push job testing/ -v
+            - rm -rf testing
+            - artifact pull project testing/ -v
+            - ls -la testing
+            - rm -rf testing
+            - artifact pull workflow testing/ -v
+            - ls -la testing
+            - rm -rf testing
+            - artifact pull job testing/ -v
+            - ls -la testing
+            - artifact yank project testing/ -v
+            - artifact yank workflow testing/ -v
+            - artifact yank job testing/ -v
