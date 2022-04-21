@@ -17,3 +17,10 @@ blocks:
             - artifact push project testing/ -v
             - artifact push workflow testing/ -v
             - artifact push job testing/ -v
+            - test-results publish junit-example.xml
+after_pipeline:
+  task:
+    jobs:
+      - name: Publish Results
+        commands:
+          - test-results gen-pipeline-report
