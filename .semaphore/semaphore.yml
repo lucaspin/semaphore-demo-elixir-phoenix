@@ -10,7 +10,6 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - checkout
             - echo "hello"
             - sleep 120
             - echo "done"
