@@ -11,8 +11,20 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
-            - echo $SEMAPHORE_ORGANIZATION_URL
-            - echo $SEMAPHORE_PROJECT_ID
-            - echo $SEMAPHORE_ARTIFACT_TOKEN
-            - echo $SEMAPHORE_WORKFLOW_ID
-            - echo $SEMAPHORE_JOB_ID
+            - echo "hello" > /tmp/hello.txt
+            - artifact push project /tmp/hello.txt
+            - artifact push workflow /tmp/hello.txt
+            - artifact push job /tmp/hello.txt
+            - rm /tmp/hello.txt
+            - artifact pull project hello.txt
+            - cat hello.txt
+            - rm hello.txt
+            - artifact pull workflow hello.txt
+            - cat hello.txt
+            - rm hello.txt
+            - artifact pull job hello.txt
+            - cat hello.txt
+            - rm hello.txt
+            - artifact yank project hello.txt
+            - artifact yank workflow hello.txt
+            - artifact yank job hello.txt
