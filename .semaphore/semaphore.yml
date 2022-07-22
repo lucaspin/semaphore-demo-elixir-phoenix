@@ -17,25 +17,13 @@ blocks:
             - echo "bye"
         - name: 'Job #2'
           commands:
-            - echo "hello"
+            - echo "this job will fail"
             - sleep 5
-            - echo "hello again"
-            - sleep 5
-            - echo "bye"
+            - badcommand
         - name: 'Job #3'
           commands:
-            - echo "hello"
-            - sleep 2
-            - echo "hello again"
-            - sleep 2
-            - echo "bye"
-        - name: 'Job #4'
-          commands:
-            - echo "hello"
-            - sleep 10
-            - echo "hello again"
-            - sleep 10
-            - echo "bye"
+            - 'echo "sleeping for 2m, you can stop this job if you want"'
+            - sleep 120
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
