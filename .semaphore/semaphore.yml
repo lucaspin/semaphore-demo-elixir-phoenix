@@ -2,8 +2,8 @@ version: v1.0
 name: Initial Pipeline
 agent:
   machine:
-    type: e1-standard-2
-    os_image: ubuntu1804
+    type: s1-local-testing
+    os_image: ''
 blocks:
   - name: 'Block #1'
     task:
@@ -11,7 +11,31 @@ blocks:
         - name: 'Job #1'
           commands:
             - echo "hello"
-            - sleep 120
+            - sleep 5
+            - echo "hello again"
+            - sleep 5
+            - echo "bye"
+        - name: 'Job #2'
+          commands:
+            - echo "hello"
+            - sleep 5
+            - echo "hello again"
+            - sleep 5
+            - echo "bye"
+        - name: 'Job #3'
+          commands:
+            - echo "hello"
+            - sleep 2
+            - echo "hello again"
+            - sleep 2
+            - echo "bye"
+        - name: 'Job #4'
+          commands:
+            - echo "hello"
+            - sleep 10
+            - echo "hello again"
+            - sleep 10
+            - echo "bye"
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
