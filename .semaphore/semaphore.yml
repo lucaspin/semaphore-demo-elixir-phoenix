@@ -23,7 +23,7 @@ blocks:
         - name: 'Job #3'
           commands:
             - 'echo "sleeping for 2m, you can stop this job if you want"'
-            - sleep 120
+            - sleep 5
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
