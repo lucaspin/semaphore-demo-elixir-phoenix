@@ -10,7 +10,6 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - badcommand
             - echo "hello"
             - sleep 5
             - echo "hello again"
