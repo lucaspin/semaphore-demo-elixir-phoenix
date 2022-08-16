@@ -10,8 +10,7 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - ls -la /opt/semaphoreci
-            - echo "hello"
+            - /opt/semaphoreci/agent version
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
