@@ -4,13 +4,16 @@ agent:
   machine:
     type: e1-standard-2
     os_image: ubuntu2004
+  containers:
+    - name: main
+      image: '762007957083.dkr.ecr.us-east-1.amazonaws.com/agent-testing:latest'
 blocks:
   - name: 'Block #1'
     task:
       jobs:
         - name: 'Job #1'
           commands:
-            - /opt/semaphoreci/agent version
+            - echo hello
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
