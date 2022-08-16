@@ -7,6 +7,8 @@ agent:
   containers:
     - name: main
       image: '762007957083.dkr.ecr.us-east-1.amazonaws.com/agent-testing:latest'
+  image_pull_secrets:
+    - name: aws-ecr-lucaspin-testing
 blocks:
   - name: 'Block #1'
     task:
