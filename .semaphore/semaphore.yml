@@ -2,7 +2,7 @@ version: v1.0
 name: Initial Pipeline
 agent:
   machine:
-    type: s1-local-testing
+    type: s1-more-local-testing
     os_image: ''
 blocks:
   - name: 'Block #1'
@@ -10,7 +10,9 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - echo hello
+            - echo "Sleeping for 5 minutes..."
+            - sleep 300
+            - echo "Done."
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
