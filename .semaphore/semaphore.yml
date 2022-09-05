@@ -10,7 +10,20 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - echo hello
+            - echo $FOO_1
+            - echo $FOO_2
+            - echo $FOO_3
+            - echo $VERY_IMPORTANT_SECRET
+            - cat test-config.ini
+      secrets:
+        - name: very-important-secret
+      env_vars:
+        - name: FOO_1
+          value: BAR_1
+        - name: FOO_2
+          value: BAR_2
+        - name: FOO_3
+          value: BAR_3
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
