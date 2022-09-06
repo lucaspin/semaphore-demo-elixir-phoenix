@@ -10,11 +10,7 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - echo $FOO_1
-            - echo $FOO_2
-            - echo $FOO_3
-            - echo $VERY_IMPORTANT_SECRET
-            - cat test-config.ini
+            - sleep 120
       secrets:
         - name: very-important-secret
       env_vars:
