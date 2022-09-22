@@ -8,7 +8,7 @@ blocks:
   - name: 'Block #1'
     task:
       jobs:
-        - name: ''
+        - name: Job 1
           commands:
             - echo hello
       secrets:
