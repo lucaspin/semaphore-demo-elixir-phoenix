@@ -11,15 +11,6 @@ blocks:
         - name: Job 1
           commands:
             - echo hello
-after_pipeline:
-  task:
-    jobs:
-      - name: Submit Reports
-        commands:
-          - echo 'submitting reports'
-      - name: Submit CI Metrics
-        commands:
-          - echo 'submitting CI metrics'
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
