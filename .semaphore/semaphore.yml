@@ -2,8 +2,8 @@ version: v1.0
 name: Initial Pipeline
 agent:
   machine:
-    type: s1-more-local-testing
-    os_image: ''
+    type: e1-standard-2
+    os_image: ubuntu2004
 blocks:
   - name: 'Block #1'
     task:
@@ -11,19 +11,7 @@ blocks:
         - name: Job 1
           commands:
             - echo hello
-          parallelism: 10
     dependencies: []
-  - name: 'Block #2'
-    dependencies: []
-    task:
-      agent:
-        machine:
-          type: s1-brand-new-again
-          os_image: ''
-      jobs:
-        - name: 'Job #1'
-          commands: []
-          parallelism: 10
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
