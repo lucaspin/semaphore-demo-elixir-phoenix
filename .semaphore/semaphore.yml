@@ -11,7 +11,8 @@ blocks:
         - name: Job 1
           commands:
             - echo hello
-          parallelism: 10
+            - sleep 60
+            - echo hello
     dependencies: []
 promotions:
   - name: Promotion 1
