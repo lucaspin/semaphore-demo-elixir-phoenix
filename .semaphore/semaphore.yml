@@ -10,8 +10,7 @@ blocks:
       jobs:
         - name: Job 1
           commands:
-            - echo hello
-            - sleep 3600
+            - 'for i in {1..1000}; echo "[$i] this is some output, just for testing purposes" && sleep 10; done'
     dependencies: []
 promotions:
   - name: Promotion 1
