@@ -2,7 +2,7 @@ version: v1.0
 name: Initial Pipeline
 agent:
   machine:
-    type: s1-brand-new-again
+    type: s1-more-local-testing
     os_image: ''
 blocks:
   - name: 'Block #1'
@@ -10,7 +10,7 @@ blocks:
       jobs:
         - name: Job 1
           commands:
-            - 'for i in {1..1000}; do echo "[$i] this is some output, just for testing purposes" && sleep 10; done'
+            - echo hello
     dependencies: []
 promotions:
   - name: Promotion 1
