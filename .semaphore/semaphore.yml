@@ -10,7 +10,8 @@ blocks:
       jobs:
         - name: Job 1
           commands:
-            - echo hello
+            - apt-get install redis-tools -y
+            - redis-cli ping
     dependencies: []
 promotions:
   - name: Promotion 1
