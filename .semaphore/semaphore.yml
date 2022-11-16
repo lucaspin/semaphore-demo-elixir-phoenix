@@ -2,7 +2,7 @@ version: v1.0
 name: Initial Pipeline
 agent:
   machine:
-    type: s1-brand-new-again
+    type: s1-more-local-testing
     os_image: ubuntu2004
   containers:
     - name: main
@@ -15,8 +15,7 @@ blocks:
       jobs:
         - name: Job 1
           commands:
-            - apt-get install redis-tools -y
-            - redis-cli ping
+            - echo hello
     dependencies: []
 promotions:
   - name: Promotion 1
