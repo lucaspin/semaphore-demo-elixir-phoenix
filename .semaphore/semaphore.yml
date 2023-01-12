@@ -2,16 +2,16 @@ version: v1.0
 name: Initial Pipeline
 agent:
   machine:
-    type: e1-standard-2
-    os_image: ubuntu2004
+    type: s1-brand-new-again
+    os_image: ''
 blocks:
   - name: 'Block #1'
     task:
       jobs:
         - name: Job 1
           commands:
+            - echo hello
             - checkout
-            - du -hs /home/semaphore/semaphore-demo-elixir-phoenix
     dependencies: []
 promotions:
   - name: Promotion 1
