@@ -11,7 +11,7 @@ blocks:
         - name: Job 1
           commands:
             - echo hello
-            - checkout
+            - sleep 30
     dependencies: []
 promotions:
   - name: Promotion 1
