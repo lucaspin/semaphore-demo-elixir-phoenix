@@ -2,15 +2,15 @@ version: v1.0
 name: Initial Pipeline
 agent:
   machine:
-    type: s1-brand-new-again
-    os_image: ''
+    type: e1-standard-2
+    os_image: ubuntu2004
 blocks:
   - name: 'Block #1'
     task:
       jobs:
         - name: Job 1
           commands:
-            - 'for i in {1..1000}; do echo "[$i] this is some output, just for testing purposes" && sleep 0.25; done'
+            - 'for i in {1..60}; do echo "[$i] this is some output, just for testing purposes" && sleep 0.25; done'
     dependencies: []
 promotions:
   - name: Promotion 1
