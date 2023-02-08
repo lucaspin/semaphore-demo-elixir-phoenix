@@ -10,7 +10,7 @@ blocks:
       jobs:
         - name: Job 1
           commands:
-            - 'for i in {1..60}; do echo "[$i] this is some output, just for testing purposes" && sleep 0.25; done'
+            - /opt/semaphoreci/agent/agent version
     dependencies: []
 promotions:
   - name: Promotion 1
