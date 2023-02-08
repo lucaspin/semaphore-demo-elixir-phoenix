@@ -13,7 +13,7 @@ blocks:
             - /opt/semaphoreci/agent version
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
-          value: qwdwdwdwd
+          value: when-trimmed
     dependencies: []
 promotions:
   - name: Promotion 1
