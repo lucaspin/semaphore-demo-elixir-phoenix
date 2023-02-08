@@ -10,11 +10,7 @@ blocks:
       jobs:
         - name: Job 1
           commands:
-            - 'echo "Running: bash /opt/semaphore/agent/hooks/pre-job"'
-            - 'echo "Warning: The agent is configured to proceed with the job even if the pre-job hook fails."'
-            - echo "Fetching Semaphore API token from Vault"
-            - echo "Fetching job data from Semaphore"
-            - sleep 20
+            - 'echo "Running: bash /opt/semaphore/agent/hooks/pre-job" && echo "Warning: The agent is configured to proceed with the job even if the pre-job hook fails." && echo "Fetching Semaphore API token from Vault" && echo "Fetching job data from Semaphore" && sleep 20'
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
           value: when-trimmed
