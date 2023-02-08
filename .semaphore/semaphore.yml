@@ -10,7 +10,126 @@ blocks:
       jobs:
         - name: Job 1
           commands:
-            - echo hello && sleep 10 && echo world && sleep 20
+            - 'for i in {0..100}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..100}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..100}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..100}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..100}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - sleep 0.5
+            - 'for i in {0..100}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..100}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..100}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..100}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..100}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - sleep 1
+            - 'for i in {0..200}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..200}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..200}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..200}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..200}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - sleep 1
+            - 'for i in {0..200}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..200}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..200}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..200}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..200}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - sleep 4
+            - 'for i in {0..500}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..500}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..500}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..500}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..500}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - sleep 5
+            - 'for i in {0..1000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..1000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..1000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..1000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..1000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - sleep 2
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - sleep 5
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - sleep 5
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - sleep 5
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - sleep 5
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - sleep 5
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - sleep 5
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - sleep 5
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - sleep 5
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - sleep 5
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - sleep 5
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - sleep 5
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - 'for i in {0..2000}; do echo ''I am overjoyed to announce that the 2nd edition of my book Code: The Hidden Language of Computer Hardware and Software will be published by Pearson on August 19, 2022.''; done'
+            - sleep 5
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
           value: when-trimmed
