@@ -11,6 +11,7 @@ blocks:
         - name: Job 1
           commands:
             - /opt/semaphoreci/agent version
+            - echo "exit 130" | sh
     dependencies: []
 promotions:
   - name: Promotion 1
