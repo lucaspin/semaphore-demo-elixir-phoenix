@@ -10,7 +10,7 @@ blocks:
       jobs:
         - name: Job 1
           commands:
-            - /opt/semaphoreci/agent/agent version
+            - /opt/semaphoreci/agent version
     dependencies: []
 promotions:
   - name: Promotion 1
