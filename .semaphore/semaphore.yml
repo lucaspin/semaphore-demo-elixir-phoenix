@@ -10,7 +10,7 @@ blocks:
       jobs:
         - name: Job 1
           commands:
-            - echo "$(date +%s) - $SEMAPHORE_JOB_CREATION_TIME" | bc
+            - echo $((SEMAPHORE_JOB_CREATION_TIME - date +%s))
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
           value: when-trimmed
