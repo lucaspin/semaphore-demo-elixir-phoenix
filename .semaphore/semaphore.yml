@@ -11,6 +11,7 @@ blocks:
         - name: Job 1
           commands:
             - echo $((`date +%s` - SEMAPHORE_JOB_CREATION_TIME))
+          parallelism: 10
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
           value: when-trimmed
