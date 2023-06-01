@@ -10,6 +10,7 @@ blocks:
       jobs:
         - name: Job 1
           commands:
+            - echo hello
             - echo $((`date +%s` - SEMAPHORE_JOB_CREATION_TIME))
           parallelism: 10
       env_vars:
