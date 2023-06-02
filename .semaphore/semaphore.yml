@@ -12,7 +12,8 @@ blocks:
           commands:
             - echo hello
             - echo $((`date +%s` - SEMAPHORE_JOB_CREATION_TIME))
-          parallelism: 10
+            - 'for i in {0..60}; do echo $i && sleep 1; done'
+          parallelism: 2
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
           value: when-trimmed
