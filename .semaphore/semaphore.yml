@@ -10,6 +10,10 @@ blocks:
       jobs:
         - name: Job 1
           commands:
+            - checkout
+            - cache
+            - test-results
+            - artifact
             - echo hello
             - echo $((`date +%s` - SEMAPHORE_JOB_CREATION_TIME))
       env_vars:
