@@ -10,8 +10,10 @@ blocks:
       jobs:
         - name: Job 1
           commands:
-            - echo hello
-            - echo $((`date +%s` - SEMAPHORE_JOB_CREATION_TIME))
+            - checkout
+            - cache
+            - artifact
+            - ps aux | grep ssh-agent
           parallelism: 6
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
