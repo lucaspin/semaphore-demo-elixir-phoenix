@@ -2,15 +2,45 @@ version: v1.0
 name: Initial Pipeline
 agent:
   machine:
-    type: s1-brand-new-type
-    os_image: ''
+    type: e1-standard-2
+    os_image: ubuntu2004
 blocks:
   - name: 'Block #1'
     task:
       jobs:
         - name: Job 1
           commands:
-            - 'for i in {0..60}; do echo "[$i] hello" && sleep 1; done'
+            - mkdir testing
+            - echo "hello" > hello.txt
+            - echo "hello 1" > testing/one.txt
+            - echo "hello 2" > testing/two.txt
+            - artifact push project hello.txt
+            - artifact push project testing
+            - artifact push workflow hello.txt
+            - artifact push workflow testing
+            - artifact push job hello.txt
+            - artifact push job testing
+            - rm hello.txt
+            - rm -rf testing
+            - artifact pull project hello.txt
+            - artifact pull project testing
+            - cat hello.txt
+            - cat testing/one.txt
+            - cat testing/two.txt
+            - rm hello.txt
+            - rm -rf testing
+            - artifact pull workflow hello.txt
+            - artifact pull workflow testing
+            - cat hello.txt
+            - cat testing/one.txt
+            - cat testing/two.txt
+            - rm hello.txt
+            - rm -rf testing
+            - artifact pull job hello.txt
+            - artifact pull job testing
+            - cat hello.txt
+            - cat testing/one.txt
+            - cat testing/two.txt
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
           value: when-trimmed
