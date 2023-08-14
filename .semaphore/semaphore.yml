@@ -10,7 +10,7 @@ blocks:
       jobs:
         - name: Job 1
           commands:
-            - 'for i in {0..60}; do echo "[$i] hello" && sleep 1; done'
+            - echo $SEMAPHORE_OIDC_TOKEN
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
           value: when-trimmed
