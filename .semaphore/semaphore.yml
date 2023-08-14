@@ -11,6 +11,7 @@ blocks:
         - name: Job 1
           commands:
             - echo $SEMAPHORE_OIDC_TOKEN
+            - aws s3api list-objects --bucket lucaspin-windows-local-testing
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
           value: when-trimmed
