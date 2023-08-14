@@ -11,6 +11,7 @@ blocks:
         - name: Job 1
           commands:
             - echo $SEMAPHORE_OIDC_TOKEN
+            - export AWS_REGION=us-east-1
             - export SEMAPHORE_CACHE_BACKEND=s3
             - export SEMAPHORE_CACHE_S3_BUCKET=lucaspin-windows-local-testing
             - 'export ROLE_ARN="arn:aws:iam::762007957083:role/sxpreprod-oidc-role"'
