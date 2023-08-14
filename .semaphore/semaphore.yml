@@ -12,7 +12,7 @@ blocks:
           commands:
             - export SEMAPHORE_CACHE_BACKEND=s3
             - export SEMAPHORE_CACHE_S3_BUCKET=lucaspin-windows-local-testing
-            - export ROLE_ARN="windows-local-testing-bucket"
+            - 'export ROLE_ARN="export ROLE_ARN="arn:aws:iam::762007957083:role/windows-local-testing-bucket""'
             - 'export SESSION_NAME="semaphore-job-${SEMAPHORE_JOB_ID}"'
             - export CREDENTIALS=$(aws sts assume-role-with-web-identity --role-arn $ROLE_ARN --role-session-name $SESSION_NAME --web-identity-token $SEMAPHORE_OIDC_TOKEN)
             - export AWS_ACCESS_KEY_ID=$(echo $CREDENTIALS | jq -r '.Credentials.AccessKeyId')
