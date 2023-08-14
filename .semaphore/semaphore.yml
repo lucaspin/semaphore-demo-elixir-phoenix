@@ -10,8 +10,15 @@ blocks:
       jobs:
         - name: Job 1
           commands:
-            - echo $SEMAPHORE_OIDC_TOKEN
-            - aws s3api list-objects --bucket lucaspin-windows-local-testing
+            - export SEMAPHORE_CACHE_BACKEND=s3
+            - export SEMAPHORE_CACHE_S3_BUCKET=lucaspin-windows-local-testing
+            - export ROLE_ARN="windows-local-testing-bucket"
+            - 'export SESSION_NAME="semaphore-job-${SEMAPHORE_JOB_ID}"'
+            - export CREDENTIALS=$(aws sts assume-role-with-web-identity --role-arn $ROLE_ARN --role-session-name $SESSION_NAME --web-identity-token $SEMAPHORE_OIDC_TOKEN)
+            - export AWS_ACCESS_KEY_ID=$(echo $CREDENTIALS | jq -r '.Credentials.AccessKeyId')
+            - export AWS_SESSION_TOKEN=$(echo $CREDENTIALS | jq -r '.Credentials.SessionToken')
+            - export AWS_SECRET_ACCESS_KEY=$(echo $CREDENTIALS | jq -r '.Credentials.SecretAccessKey')
+            - cache list
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
           value: when-trimmed
