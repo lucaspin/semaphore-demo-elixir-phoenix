@@ -21,6 +21,8 @@ blocks:
             - export AWS_SESSION_TOKEN=$(echo $CREDENTIALS | jq -r '.Credentials.SessionToken')
             - export AWS_SECRET_ACCESS_KEY=$(echo $CREDENTIALS | jq -r '.Credentials.SecretAccessKey')
             - aws sts get-caller-identity
+            - echo hello > /tmp/hello.txt
+            - cache store hello1 /tmp/hello.txt
             - cache list
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
