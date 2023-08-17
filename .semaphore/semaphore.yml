@@ -10,20 +10,8 @@ blocks:
       jobs:
         - name: Job 1
           commands:
-            - echo $SEMAPHORE_OIDC_TOKEN
-            - export AWS_REGION=us-east-1
-            - export SEMAPHORE_CACHE_BACKEND=s3
-            - export SEMAPHORE_CACHE_S3_BUCKET=lucaspin-windows-local-testing
-            - 'export ROLE_ARN="arn:aws:iam::762007957083:role/sxpreprod-oidc-role"'
-            - 'export SESSION_NAME="semaphore-job-${SEMAPHORE_JOB_ID}"'
-            - export CREDENTIALS=$(aws sts assume-role-with-web-identity --role-arn $ROLE_ARN --role-session-name $SESSION_NAME --web-identity-token $SEMAPHORE_OIDC_TOKEN)
-            - export AWS_ACCESS_KEY_ID=$(echo $CREDENTIALS | jq -r '.Credentials.AccessKeyId')
-            - export AWS_SESSION_TOKEN=$(echo $CREDENTIALS | jq -r '.Credentials.SessionToken')
-            - export AWS_SECRET_ACCESS_KEY=$(echo $CREDENTIALS | jq -r '.Credentials.SecretAccessKey')
-            - aws sts get-caller-identity
-            - echo hello > /tmp/hello.txt
-            - cache store hello1 /tmp/hello.txt
-            - cache list
+            - echo hello
+          parallelism: 10
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
           value: when-trimmed
