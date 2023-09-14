@@ -10,11 +10,13 @@ blocks:
       jobs:
         - name: Job 1
           commands:
-            - echo hello
-          parallelism: 20
+            - echo $VERY_IMPORTANT_SECRET
+            - cat test-config.ini
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
           value: when-trimmed
+      secrets:
+        - name: very-important-secret
     dependencies: []
 promotions:
   - name: Promotion 1
