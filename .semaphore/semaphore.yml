@@ -11,12 +11,15 @@ blocks:
         - name: Job 1
           commands:
             - echo $VERY_IMPORTANT_SECRET
+            - echo $VERY_IMPORTANT_SECRET_2
             - cat test-config.ini
+            - cat test-config-2.ini
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
           value: when-trimmed
       secrets:
         - name: very-important-secret
+        - name: very-important-secret-2
     dependencies: []
 promotions:
   - name: Promotion 1
