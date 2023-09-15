@@ -11,3 +11,5 @@ blocks:
         - name: 'Job #1'
           commands:
             - echo "Hello from promotion"
+            - echo $SECRET_FROM_TARGET
+            - echo $SECRET_FROM_TARGET_2
