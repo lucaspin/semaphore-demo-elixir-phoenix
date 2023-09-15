@@ -12,14 +12,19 @@ blocks:
           commands:
             - echo $VERY_IMPORTANT_SECRET
             - echo $VERY_IMPORTANT_SECRET_2
+            - echo $VERY_IMPORTANT_SECRET_3
+            - echo $HELLO_JUST_TESTING
+            - echo $HELLO_JUST_TESTING_2
             - cat test-config.ini
             - cat test-config-2.ini
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
           value: when-trimmed
       secrets:
+        - name: created-after-encryption-changes
+        - name: created-before-encryption-changes
         - name: very-important-secret
-        - name: very-important-secret-2
+        - name: very-important-secret-3
     dependencies: []
 promotions:
   - name: Promotion 1
