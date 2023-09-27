@@ -20,6 +20,7 @@ blocks:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
           value: when-trimmed
       secrets:
+        - name: brand-new-project-secret
         - name: created-after-encryption-changes
         - name: created-before-encryption-changes
         - name: very-important-secret
