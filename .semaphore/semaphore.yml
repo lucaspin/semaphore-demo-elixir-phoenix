@@ -21,11 +21,13 @@ blocks:
           value: when-trimmed
       secrets:
         - name: brand-new-project-secret
+        - name: brand-new-project-secret-2
         - name: created-after-encryption-changes
         - name: created-before-encryption-changes
         - name: very-important-secret
         - name: very-important-secret-3
         - name: very-important-secret-4
+        - name: very-important-secret-5
     dependencies: []
 promotions:
   - name: Promotion 1
