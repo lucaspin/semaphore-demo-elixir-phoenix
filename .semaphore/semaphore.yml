@@ -22,6 +22,7 @@ blocks:
       secrets:
         - name: brand-new-project-secret
         - name: brand-new-project-secret-2
+        - name: brand-new-project-secret-3
         - name: created-after-encryption-changes
         - name: created-before-encryption-changes
         - name: very-important-secret
