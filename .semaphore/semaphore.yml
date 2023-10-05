@@ -2,20 +2,15 @@ version: v1.0
 name: Initial Pipeline
 agent:
   machine:
-    type: e1-standard-2
-    os_image: ubuntu2004
+    type: s1-brand-new-type
+    os_image: ''
 blocks:
   - name: 'Block #1'
     task:
       jobs:
         - name: Job 1
           commands:
-            - echo $VERY_IMPORTANT_SECRET
-            - echo $VERY_IMPORTANT_SECRET_2
-            - echo $VERY_IMPORTANT_SECRET_3
-            - echo $HELLO_JUST_TESTING
-            - echo $HELLO_JUST_TESTING_2
-            - cat test-config.ini
+            - echo hello
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
           value: when-trimmed
@@ -24,7 +19,6 @@ blocks:
         - name: brand-new-project-secret-2
         - name: brand-new-project-secret-3
         - name: created-after-encryption-changes
-        - name: created-before-encryption-changes
         - name: very-important-secret
         - name: very-important-secret-3
         - name: very-important-secret-4
