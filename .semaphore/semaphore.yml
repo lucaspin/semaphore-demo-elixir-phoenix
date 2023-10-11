@@ -13,8 +13,7 @@ blocks:
       jobs:
         - name: Job 1
           commands:
-            - sleep 60
-          parallelism: 10
+            - echo hello
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
           value: when-trimmed
