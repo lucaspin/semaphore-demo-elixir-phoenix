@@ -26,10 +26,6 @@ blocks:
         - name: very-important-secret-3
         - name: very-important-secret-4
         - name: very-important-secret-5
-      epilogue:
-        always:
-          commands:
-            - docker ps -q --filter "name=main" | xargs docker stop
     dependencies: []
 promotions:
   - name: Promotion 1
