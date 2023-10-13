@@ -10,7 +10,7 @@ blocks:
       jobs:
         - name: Job 1
           commands:
-            - echo $SEMAPHORE_OIDC_TOKEN
+            - echo $BRAND_NEW_SECRET_123123
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
           value: when-trimmed
