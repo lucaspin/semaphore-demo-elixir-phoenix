@@ -4,16 +4,16 @@ agent:
   machine:
     type: e1-standard-2
     os_image: ubuntu2004
-  containers:
-    - name: main
-      image: 'semaphoreci/ubuntu:20.04'
-      image_pull_secrets:
-        - name: very-important-secret-102
-      env_vars:
-        - name: FOO_1
-          value: BAR_1
-        - name: FOO_2
-          value: BAR_2
+image_pull_secrets:
+  - name: very-important-secret-102
+containers:
+  - name: main
+    image: 'semaphoreci/ubuntu:20.04'
+    env_vars:
+      - name: FOO_1
+        value: BAR_1
+      - name: FOO_2
+        value: BAR_2
 blocks:
   - name: 'Block #1'
     task:
