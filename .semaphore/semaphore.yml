@@ -7,6 +7,13 @@ agent:
   containers:
     - name: main
       image: 'semaphoreci/ubuntu:20.04'
+      image_pull_secrets:
+        - name: very-important-secret-102
+      env_vars:
+        - name: FOO_1
+          value: BAR_1
+        - name: FOO_2
+          value: BAR_2
 blocks:
   - name: 'Block #1'
     task:
