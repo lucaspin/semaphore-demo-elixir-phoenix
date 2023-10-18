@@ -11,6 +11,7 @@ blocks:
         - name: Job 1
           commands:
             - echo $BRAND_NEW_SECRET_123123
+            - /opt/semaphore/agent version
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
           value: when-trimmed
