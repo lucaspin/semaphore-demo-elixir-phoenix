@@ -17,11 +17,11 @@ blocks:
           value: when-trimmed
       secrets:
         - name: brand-and-safe-secret
+        - name: brand-and-safe-secret-2
         - name: brand-new-project-secret
         - name: brand-new-project-secret-2
         - name: brand-new-project-secret-3
         - name: brand-safe-secret
-        - name: created-after-encryption-changes
         - name: very-important-secret
         - name: very-important-secret-3
         - name: very-important-secret-4
