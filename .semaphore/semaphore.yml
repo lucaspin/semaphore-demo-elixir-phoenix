@@ -2,15 +2,26 @@ version: v1.0
 name: Initial Pipeline
 agent:
   machine:
-    type: e1-standard-2
+    type: s1-default-settings
     os_image: ubuntu2004
+  containers:
+    - name: main
+      image: 'semaphoreci/ubuntu:20.04'
+      env_vars:
+        - name: FOO_1
+          value: BAR_1
+        - name: FOO_2
+          value: BAR_2
 blocks:
   - name: 'Block #1'
     task:
       jobs:
         - name: Job 1
           commands:
-            - echo hello
+            - echo $FOO_1
+            - echo $FOO_2
+            - sleep $(($(shuf -i 5000-30000 -n 1) / 1000))
+          parallelism: 25
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
           value: when-trimmed
@@ -26,6 +37,28 @@ blocks:
         - name: very-important-secret-4
         - name: very-important-secret-5
     dependencies: []
+  - name: 'Block #2'
+    dependencies:
+      - 'Block #1'
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - echo $FOO_1
+            - echo $FOO_2
+            - sleep $(($(shuf -i 5000-30000 -n 1) / 1000))
+          parallelism: 50
+  - name: 'Block #3'
+    dependencies:
+      - 'Block #2'
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - echo $FOO_1
+            - echo $FOO_2
+            - sleep $(($(shuf -i 60000-120000 -n 1) / 1000))
+          parallelism: 5
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
