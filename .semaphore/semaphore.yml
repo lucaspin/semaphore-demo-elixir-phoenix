@@ -2,20 +2,11 @@ version: v1.0
 name: Initial Pipeline
 agent:
   machine:
-    type: s1-lucaspin-testing
-    os_image: ''
+    type: e1-standard-2
+    os_image: ubuntu2004
 blocks:
   - name: 'Block #1'
     dependencies: []
-    task:
-      jobs:
-        - name: 'Job #1'
-          commands:
-            - sleep $(($(shuf -i 5000-15000 -n 1) / 1000))
-          parallelism: 10
-  - name: 'Block #2'
-    dependencies:
-      - 'Block #1'
     task:
       jobs:
         - name: 'Job #1'
