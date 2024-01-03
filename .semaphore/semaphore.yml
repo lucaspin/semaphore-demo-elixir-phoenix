@@ -3,7 +3,10 @@ name: Initial Pipeline
 agent:
   machine:
     type: s1-lucaspin-testing
-    os_image: ''
+    os_image: ubuntu2004
+  containers:
+    - name: main
+      image: 'semaphoreci/ubuntu:20.04'
 blocks:
   - name: 'Block #1'
     dependencies: []
@@ -12,7 +15,6 @@ blocks:
         - name: 'Job #1'
           commands:
             - sleep $(($(shuf -i 5000-15000 -n 1) / 1000))
-          parallelism: 4
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
