@@ -15,6 +15,7 @@ blocks:
         - name: 'Job #1'
           commands:
             - sleep $(($(shuf -i 5000-15000 -n 1) / 1000))
+          parallelism: 12
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
