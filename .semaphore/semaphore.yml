@@ -58,7 +58,13 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - sleep 3600
+            - echo $FOO_1
+            - echo $FOO_2
+            - checkout || true
+            - cache || true
+            - artifact || true
+            - test-results || true
+            - spc || true
             - sleep $(($(shuf -i 5000-15000 -n 1) / 1000))
 promotions:
   - name: Promotion 1
