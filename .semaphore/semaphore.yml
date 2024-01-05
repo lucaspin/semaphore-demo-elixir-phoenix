@@ -14,6 +14,11 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
+            - checkout
+            - cache
+            - artifact
+            - test-results
+            - spc
             - sleep $(($(shuf -i 5000-15000 -n 1) / 1000))
           parallelism: 6
   - name: 'Block #2'
@@ -29,6 +34,11 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
+            - checkout
+            - cache
+            - artifact
+            - test-results
+            - spc
             - sleep $(($(shuf -i 5000-15000 -n 1) / 1000))
           parallelism: 3
 promotions:
