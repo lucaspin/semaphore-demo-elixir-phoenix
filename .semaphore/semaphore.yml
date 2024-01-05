@@ -31,20 +31,6 @@ blocks:
           commands:
             - sleep $(($(shuf -i 5000-15000 -n 1) / 1000))
           parallelism: 3
-  - name: 'Block #3'
-    dependencies: []
-    task:
-      agent:
-        machine:
-          type: s1-lucaspin-testing-3
-          os_image: ubuntu2004
-        containers:
-          - name: main
-            image: 'semaphoreci/ubuntu:20.04'
-      jobs:
-        - name: 'Job #1'
-          commands:
-            - sleep $(($(shuf -i 5000-15000 -n 1) / 1000))
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
