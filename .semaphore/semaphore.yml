@@ -60,6 +60,10 @@ blocks:
           commands:
             - echo $FOO_1
             - echo $FOO_2
+            - ls -la /opt
+            - ls -la /opt/semaphore
+            - ls -la /opt/semaphore/hooks
+            - cat /opt/semaphore/hooks/pre-job-hook
             - checkout || true
             - cache || true
             - artifact || true
