@@ -51,7 +51,10 @@ blocks:
       agent:
         machine:
           type: s1-lucaspin-testing-3
-          os_image: ''
+          os_image: ubuntu2004
+        containers:
+          - name: main
+            image: 'semaphoreci/ubuntu:20.04'
       jobs:
         - name: 'Job #1'
           commands:
