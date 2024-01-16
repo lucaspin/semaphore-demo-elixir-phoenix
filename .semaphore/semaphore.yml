@@ -3,10 +3,7 @@ name: Initial Pipeline
 agent:
   machine:
     type: s1-lucaspin-testing
-    os_image: ubuntu2004
-  containers:
-    - name: main
-      image: 'semaphoreci/ubuntu:20.04'
+    os_image: ''
 blocks:
   - name: 'Block #1'
     dependencies: []
@@ -14,57 +11,6 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - echo $FOO_1
-            - echo $FOO_2
-            - checkout || true
-            - cache || true
-            - artifact || true
-            - test-results || true
-            - spc || true
-            - sleep $(($(shuf -i 5000-15000 -n 1) / 1000))
-          parallelism: 6
-  - name: 'Block #2'
-    dependencies: []
-    task:
-      agent:
-        machine:
-          type: s1-lucaspin-testing-2
-          os_image: ubuntu2004
-        containers:
-          - name: main
-            image: 'semaphoreci/ubuntu:20.04'
-      jobs:
-        - name: 'Job #1'
-          commands:
-            - echo $FOO_1
-            - echo $FOO_2
-            - checkout || true
-            - cache || true
-            - artifact || true
-            - test-results || true
-            - spc || true
-            - sleep $(($(shuf -i 5000-15000 -n 1) / 1000))
-          parallelism: 3
-  - name: 'Block #3'
-    dependencies: []
-    task:
-      agent:
-        machine:
-          type: s1-lucaspin-testing-3
-          os_image: ubuntu2004
-        containers:
-          - name: main
-            image: 'semaphoreci/ubuntu:20.04'
-      jobs:
-        - name: 'Job #1'
-          commands:
-            - echo $FOO_1
-            - echo $FOO_2
-            - checkout || true
-            - cache || true
-            - artifact || true
-            - test-results || true
-            - spc || true
             - sleep $(($(shuf -i 5000-15000 -n 1) / 1000))
 promotions:
   - name: Promotion 1
