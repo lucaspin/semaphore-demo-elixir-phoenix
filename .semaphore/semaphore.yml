@@ -14,8 +14,7 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - sleep $(($(shuf -i 120000-150000 -n 1) / 1000))
-          parallelism: 10
+            - sleep $(($(shuf -i 10000-20000 -n 1) / 1000))
   - name: 'Block #2'
     dependencies: []
     task:
@@ -29,8 +28,7 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - sleep $(($(shuf -i 120000-150000 -n 1) / 1000))
-          parallelism: 10
+            - sleep $(($(shuf -i 10000-20000 -n 1) / 1000))
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
