@@ -16,7 +16,7 @@ blocks:
           commands:
             - checkout
             - cache
-            - sleep 30
+            - tail /dev/zero > /dev/null
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
