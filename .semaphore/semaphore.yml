@@ -7,8 +7,6 @@ agent:
   containers:
     - name: main
       image: 'semaphoreci/ubuntu:20.04'
-    - name: redis
-      image: 'redis:6.0.20-alpine'
 blocks:
   - name: 'Block #1'
     dependencies: []
@@ -18,6 +16,7 @@ blocks:
           commands:
             - apt install redis-tools
             - redis-cli ping
+          parallelism: 20
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
