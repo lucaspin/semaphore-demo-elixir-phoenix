@@ -14,8 +14,9 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - apt install redis-tools
-            - redis-cli ping
+            - checkout
+            - cache
+            - sleep 10000
           parallelism: 20
 promotions:
   - name: Promotion 1
