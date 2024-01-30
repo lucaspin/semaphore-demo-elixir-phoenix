@@ -17,7 +17,6 @@ blocks:
             - checkout
             - cache
             - sleep 10000
-          parallelism: 20
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
