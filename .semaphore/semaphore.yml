@@ -3,10 +3,7 @@ name: Initial Pipeline
 agent:
   machine:
     type: s1-lucaspin-testing
-    os_image: ubuntu2004
-  containers:
-    - name: main
-      image: 'semaphoreci/ubuntu:20.04'
+    os_image: ''
 blocks:
   - name: 'Block #1'
     dependencies: []
@@ -14,7 +11,7 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - tail /dev/zero > /dev/null
+            - echo hello
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
