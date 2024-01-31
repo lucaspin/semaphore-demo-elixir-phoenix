@@ -15,6 +15,7 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
+          parallelism: 20
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
