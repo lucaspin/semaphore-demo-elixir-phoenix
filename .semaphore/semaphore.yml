@@ -12,6 +12,7 @@ blocks:
         - name: 'Job #1'
           commands:
             - echo hello
+          parallelism: 10
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
