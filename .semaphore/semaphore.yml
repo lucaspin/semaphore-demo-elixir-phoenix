@@ -14,7 +14,11 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - echo hello
+            - checkout
+            - sleep 60
+            - cache
+            - test-results
+            - spc
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
