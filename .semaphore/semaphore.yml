@@ -17,7 +17,7 @@ blocks:
         - name: 'Job #1'
           commands:
             - apt install redis-tools
-            - redis-cli -h redis ping
+            - redis-cli -h redisnotfound ping
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
