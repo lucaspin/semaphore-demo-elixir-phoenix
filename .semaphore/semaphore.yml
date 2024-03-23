@@ -12,7 +12,7 @@ blocks:
         - name: 'Job #1'
           commands:
             - for i in {1..10}; do echo "something" > /tmp/something-$i.txt; done
-            - for i in {1..10}; do artifact push project /tmp/something-$i.txt; done
+            - for i in {1..10}; do artifact push project /tmp/something-$i.txt -f; done
             - for i in {1..10}; do artifact push workflow /tmp/something-$i.txt; done
             - for i in {1..10}; do artifact push job /tmp/something-$i.txt; done
 promotions:
