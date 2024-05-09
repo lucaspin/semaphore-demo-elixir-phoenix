@@ -11,6 +11,8 @@ blocks:
         - name: Job 1
           commands:
             - echo hello
+            - sleep 120
+            - echo bye
           parallelism: 20
       env_vars:
         - name: SEMAPHORE_AGENT_UPLOAD_JOB_LOGS
