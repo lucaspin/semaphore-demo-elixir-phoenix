@@ -19,6 +19,7 @@ agent:
 global_job_config:
   prologue:
     commands:
+      - echo "123"
       # Specify elixir version
       - sem-version elixir 1.11
       # Checkout code from Git repository. This step is mandatory if the
