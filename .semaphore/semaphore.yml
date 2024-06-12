@@ -7,6 +7,8 @@ agent:
 blocks:
   - name: 'Block #1'
     dependencies: []
+    run:
+      when: change_in('/test')
     task:
       jobs:
         - name: 'Job #1'
