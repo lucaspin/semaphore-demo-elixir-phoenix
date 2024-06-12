@@ -11,7 +11,11 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - echo hello
+            - echo $SEMAPHORE_ARTIFACT_TOKEN
+            - echo test > /tmp/test.txt
+            - artifact push project /tmp/test.txt -f
+            - artifact push workflow /tmp/test.txt -f
+            - artifact push job /tmp/test.txt
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
