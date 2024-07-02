@@ -18,6 +18,7 @@ blocks:
             - artifact push project /tmp/test.txt -f
             - artifact push workflow /tmp/test.txt -f
             - artifact push job /tmp/test.txt
+            - echo done
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
