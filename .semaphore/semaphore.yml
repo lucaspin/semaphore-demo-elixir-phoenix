@@ -14,7 +14,7 @@ blocks:
         - name: 'Job #1'
           commands:
             - echo hello
-            - /opt/semaphore/agent version
+            - /opt/semaphoreci/agent version
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
