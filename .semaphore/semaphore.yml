@@ -13,7 +13,7 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - echo hello
+            - 'for i in $(seq 1 900); do echo "[$i] Hello, hello, hello" && sleep 1; done'
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
