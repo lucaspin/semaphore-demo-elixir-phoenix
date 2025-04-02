@@ -13,11 +13,13 @@ global_job_config:
       - cache restore
 blocks:
   - name: Set up
+    run:
+      when: change_in('/lib')
     task:
       jobs:
-        - name: compile and build plts
+        - name: test
           commands:
-            - echo $SEMAPHORE_OIDC_TOKEN
+            - echo whatever
 after_pipeline:
   task:
     jobs:
