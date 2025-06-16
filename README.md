@@ -1,6 +1,6 @@
 # Semaphore demo CI pipeline using Elixir and Phoenix
 
-Testing something else here
+Testing something here
 
 Example application and continuous integration (CI) pipeline showing how to run
 an Elixir Phoenix project on [Semaphore][semaphore].
