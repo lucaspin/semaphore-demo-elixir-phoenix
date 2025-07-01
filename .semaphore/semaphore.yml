@@ -7,13 +7,10 @@ agent:
 blocks:
   - name: 'Block #1'
     dependencies: []
-    run:
-      when: change_in('/test')
     task:
       jobs:
         - name: 'Job #1'
           commands:
-            - 'for i in $(seq 1 900); do echo "[$i] Hello, hello, hello" && sleep 1; done'
-promotions:
-  - name: Promotion 1
-    pipeline_file: pipeline_2.yml
+            - echo "Hello from promotion"
+            - echo $APP
+            - echo $VERSION
