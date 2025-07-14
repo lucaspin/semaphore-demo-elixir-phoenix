@@ -11,6 +11,4 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - echo "Hello from promotion"
-            - echo $APP
-            - echo $VERSION
+            - echo hello
