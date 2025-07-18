@@ -12,3 +12,4 @@ blocks:
         - name: 'Job #1'
           commands:
             - echo hello
+            - echo $SEMAPHORE_OIDC_TOKEN
