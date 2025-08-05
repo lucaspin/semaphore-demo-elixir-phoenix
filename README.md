@@ -1,7 +1,5 @@
 # Semaphore demo CI pipeline using Elixir and Phoenix
 
-TETETETET
-
 Example application and continuous integration (CI) pipeline showing how to run
 an Elixir Phoenix project on [Semaphore][semaphore].
 
