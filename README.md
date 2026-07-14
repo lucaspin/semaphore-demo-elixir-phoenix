@@ -8,6 +8,8 @@ an Elixir Phoenix project on [Semaphore][semaphore].
 Fork this repository and use it to [create your own project][create-project] on
 Semaphore.
 
+asdasdasd
+
 The CI pipeline will look like this:
 
 ![CI pipeline on Semaphore](public/ci-pipeline.png)
